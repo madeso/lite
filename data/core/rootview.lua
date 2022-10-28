@@ -449,12 +449,23 @@ end
 function RootView:on_mouse_moved(x, y, dx, dy)
   if self.dragged_divider then
     local node = self.dragged_divider
+    
+    local pv = node.a.views[1]
+    local ispv = pv.get_name() == "Project"
+    if ispv then
+      local div = pv:get_div() + dx
+      pv:on_div_size(div)
+      return
+    end
+    
+
     if node.type == "hsplit" then
       node.divider = node.divider + dx / node.size.x
     else
       node.divider = node.divider + dy / node.size.y
     end
     node.divider = common.clamp(node.divider, 0.01, 0.99)
+
     return
   end
 

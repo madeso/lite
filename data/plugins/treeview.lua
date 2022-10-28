@@ -27,6 +27,14 @@ function TreeView:new()
   self.cache = {}
 end
 
+function TreeView:get_div()
+  return config.treeview_size
+end
+
+function TreeView:on_div_size(thes)
+  config.treeview_size = thes
+end
+
 
 function TreeView:get_cached(item)
   local t = self.cache[item.filename]
