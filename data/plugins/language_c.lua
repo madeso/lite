@@ -43,6 +43,13 @@ syntax.add {
     ["auto"]     = "keyword",
     ["const"]    = "keyword",
     ["void"]     = "keyword",
+    ["constexpr"]= "keyword",
+    ["using"]    = "keyword",
+    ["maybe_unused"]    = "keyword",
+    ["template"]    = "keyword",
+    ["operator"]    = "keyword",
+    ["typename"]    = "keyword",
+
     ["int"]      = "keyword2",
     ["short"]    = "keyword2",
     ["long"]     = "keyword2",
@@ -51,6 +58,7 @@ syntax.add {
     ["char"]     = "keyword2",
     ["unsigned"] = "keyword2",
     ["bool"]     = "keyword2",
+
     ["true"]     = "literal",
     ["false"]    = "literal",
     ["NULL"]     = "literal",
