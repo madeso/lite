@@ -59,6 +59,9 @@ syntax.add {
     ["typename"]    = "keyword",
     ["namespace"]    = "keyword",
     ["explicit"]    = "keyword",
+    ["virtual"]    = "keyword",
+    ["override"]    = "keyword",
+    ["this"]    = "keyword",
 
     ["int"]      = "keyword2",
     ["short"]    = "keyword2",
